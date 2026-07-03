@@ -5,6 +5,18 @@
 #include <ctype.h>
 #include <time.h>
 
+void tokenize_vietnamese(const char *text, char words[][MAX_WORD_LEN], int *count) {
+    *count = 0;
+    char temp[1000];
+    strcpy(temp, text);
+    char *token = strtok(temp, " .,!?;:\n\t\"'()[]{}");
+    while (token != NULL && *count < MAX_WORDS) {
+        strcpy(words[*count], token);
+        (*count)++;
+        token = strtok(NULL, " .,!?;:\n\t\"'()[]{}");
+    }
+}
+
 void markov_init(Dictionary *dict) {
     dict->count = 0;
     for (int i = 0; i < MAX_WORDS; i++) dict->nodes[i] = NULL;
@@ -52,15 +64,7 @@ static void add_transition(Dictionary *dict, const char *from, const char *to) {
 void markov_learn(Dictionary *dict, const char *sentence) {
     char words[MAX_WORDS][MAX_WORD_LEN];
     int word_count = 0;
-    char temp[1000];
-    strcpy(temp, sentence);
-    char *token = strtok(temp, " .,!?;:\n\t");
-    while (token != NULL && word_count < MAX_WORDS) {
-        for (int i = 0; token[i]; i++) token[i] = tolower(token[i]);
-        strcpy(words[word_count], token);
-        word_count++;
-        token = strtok(NULL, " .,!?;:\n\t");
-    }
+    tokenize_vietnamese(sentence, words, &word_count);
     for (int i = 0; i < word_count - 1; i++) {
         add_transition(dict, words[i], words[i + 1]);
     }
@@ -69,12 +73,9 @@ void markov_learn(Dictionary *dict, const char *sentence) {
 char* markov_generate(Dictionary *dict, const char *start_word) {
     static char response[MAX_RESPONSE * 10];
     response[0] = '\0';
-    char word_lower[MAX_WORD_LEN];
-    strcpy(word_lower, start_word);
-    for (int i = 0; word_lower[i]; i++) word_lower[i] = tolower(word_lower[i]);
-    MarkovNode *current = find_or_add(dict, word_lower);
-    if (strcmp(current->word, word_lower) != 0) {
-        snprintf(response, sizeof(response), "I don't know about '%s'. Try something else!", start_word);
+    MarkovNode *current = find_or_add(dict, start_word);
+    if (strcmp(current->word, start_word) != 0) {
+        snprintf(response, sizeof(response), "Tôi không biết về '%s'. Hãy hỏi điều khác!", start_word);
         return response;
     }
     strcat(response, current->word);
@@ -106,7 +107,7 @@ char* markov_generate(Dictionary *dict, const char *start_word) {
 void markov_load_file(Dictionary *dict, const char *filename) {
     FILE *file = fopen(filename, "r");
     if (!file) {
-        printf("⚠️  Warning: Cannot open '%s'\n", filename);
+        printf("⚠️  Không thể mở file '%s'\n", filename);
         return;
     }
     char line[1000];
@@ -118,7 +119,7 @@ void markov_load_file(Dictionary *dict, const char *filename) {
         }
     }
     fclose(file);
-    printf("📚 Loaded %d sentences from %s\n", count, filename);
+    printf("📚 Đã tải %d câu từ %s\n", count, filename);
 }
 
 int markov_vocab_size(Dictionary *dict) {

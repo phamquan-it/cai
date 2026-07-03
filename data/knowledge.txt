@@ -1,13 +1,21 @@
-# Default knowledge for CAI
-# Each line is one sentence
+# Tri thức cơ bản cho CAI - Bản tiếng Việt
 
-hello i am cai an artificial intelligence
-my name is cai and i am written in c language
-machine learning is fun and powerful
-deep learning uses neural networks
-c programming is fast and efficient
-python is good for data science
-artificial intelligence will change the world
-i love learning new things
-programming is an art
-neural networks are inspired by the brain
+xin chào tôi là cai một trí tuệ nhân tạo
+tôi tên là cai và tôi được viết bằng ngôn ngữ c
+học máy rất thú vị và mạnh mẽ
+học sâu sử dụng mạng nơ ron
+lập trình c rất nhanh và hiệu quả
+python rất tốt cho khoa học dữ liệu
+trí tuệ nhân tạo sẽ thay đổi thế giới
+tôi thích học những điều mới mẻ
+lập trình là một nghệ thuật
+mạng nơ ron được lấy cảm hứng từ bộ não con người
+tôi là một ai ngốc nhưng tôi chạy rất nhanh
+tôi không hiểu nhiều nhưng tôi cố gắng hết sức
+trí tuệ nhân tạo viết bằng c rất mạnh mẽ
+tôi có thể học từ cuộc trò chuyện
+hãy hỏi tôi bất cứ điều gì
+tôi yêu việt nam
+lập trình viên rất sáng tạo
+công nghệ thông tin là tương lai
+học lập trình không bao giờ là muộn

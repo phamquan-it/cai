@@ -12,14 +12,6 @@ void trim(char *str) {
     }
 }
 
-void to_lower(char *str) {
-    for (int i = 0; str[i]; i++) str[i] = tolower(str[i]);
-}
-
-int starts_with(const char *str, const char *prefix) {
-    return strncmp(str, prefix, strlen(prefix)) == 0;
-}
-
 void clear_screen() {
     #ifdef _WIN32
         system("cls");

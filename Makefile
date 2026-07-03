@@ -2,7 +2,10 @@ CC = gcc
 CFLAGS = -Wall -Wextra -O2 -I./src
 LDFLAGS = -lm
 TARGET = bin/cai
-SRCS = src/main.c src/brain.c src/markov.c src/utils.c
+SRCS = src/main.c src/brain.c src/markov.c src/utils.c src/context.c \
+       src/intent.c src/attribute.c src/definition.c src/physics.c \
+       src/coder.c src/knowledge.c src/chemistry.c src/vietnamese.c \
+       src/bridge.c
 OBJS = $(SRCS:src/%.c=build/%.o)
 
 all: $(TARGET)
@@ -23,15 +26,4 @@ clean:
 run: $(TARGET)
 	./$(TARGET)
 
-debug: CFLAGS += -g -DDEBUG
-debug: clean $(TARGET)
-	gdb ./$(TARGET)
-
-help:
-	@echo "Commands:"
-	@echo "  make        Build project"
-	@echo "  make clean  Clean build files"
-	@echo "  make run    Build and run"
-	@echo "  make debug  Build with debug symbols"
-
-.PHONY: all clean run debug help
+.PHONY: all clean run
