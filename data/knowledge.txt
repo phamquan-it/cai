@@ -1,0 +1,13 @@
+# Default knowledge for CAI
+# Each line is one sentence
+
+hello i am cai an artificial intelligence
+my name is cai and i am written in c language
+machine learning is fun and powerful
+deep learning uses neural networks
+c programming is fast and efficient
+python is good for data science
+artificial intelligence will change the world
+i love learning new things
+programming is an art
+neural networks are inspired by the brain
