@@ -6,11 +6,48 @@
 void print_banner() {
     printf("\n");
     printf("╔══════════════════════════════════════════════════════════════╗\n");
-    printf("║   🧠  CAI - Cognitive Artificial Intelligence                ║\n");
-    printf("║   🧠  BRIDGE - TỔNG HỢP SUY NGHĨ                           ║\n");
-    printf("║   🇻🇳 TIẾNG VIỆT | 🔬 VẬT LÝ | 🧪 HÓA HỌC | 💻 CODE       ║\n");
-    printf("║   \"Tôi suy nghĩ trước khi trả lời - Có thể lâu hơn 1ms\"   ║\n");
+    printf("║                                                              ║\n");
+    printf("║   ██████  ▄████▄   ▄▄▄       ██▓███                         ║\n");
+    printf("║  ▒██    ▒▒██▀ ▀█  ▒████▄    ▓██░  ██▒                       ║\n");
+    printf("║  ░ ▓██▄  ▒▓█    ▄ ▒██  ▀█▄  ▓██░ ██▓▒                       ║\n");
+    printf("║    ▒   ██▒▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██▄█▓▒ ▒                       ║\n");
+    printf("║  ▒██████▒▒▒ ▓███▀ ░ ▓█   ▓██▒▒██▒ ░  ░                       ║\n");
+    printf("║  ▒ ▒▓▒ ▒ ░░ ░▒ ▒  ░ ▒▒   ▓▒█░▒▓▒░ ░  ░                       ║\n");
+    printf("║  ░ ░▒  ░ ░  ░  ▒     ▒   ▒▒ ░░▒ ░                            ║\n");
+    printf("║  ░  ░  ░  ░          ░   ▒   ░░                              ║\n");
+    printf("║        ░  ░ ░            ░  ░                                ║\n");
+    printf("║          ░                                                    ║\n");
+    printf("║                                                              ║\n");
+    printf("╠══════════════════════════════════════════════════════════════╣\n");
+    printf("║                                                              ║\n");
+    printf("║   🧠  CAI - C-AI (Cognitive Artificial Intelligence)         ║\n");
+    printf("║                                                              ║\n");
+    printf("║   \"Viết bằng C - Chạy nhanh hơn cả tốc độ lướt TikTok\"      ║\n");
+    printf("║                                                              ║\n");
+    printf("║   ⚡ Python: \"Tôi có AI!\"                                   ║\n");
+    printf("║   🚀 CAI:   \"Ờ, tôi viết bằng C, chạy xong thì Python        ║\n");
+    printf("║              mới đang import tensorflow...\"                  ║\n");
+    printf("║                                                              ║\n");
+    printf("║   🔥 Dám cá là bạn chưa thấy AI nào chạy nhanh như này!      ║\n");
+    printf("║   💪 Không GPU, không CUDA, chỉ C và lòng tự trọng!          ║\n");
+    printf("║                                                              ║\n");
+    printf("╠══════════════════════════════════════════════════════════════╣\n");
+    printf("║                                                              ║\n");
+    printf("║   🛑  TUỔI GÌ NHẢY VÔ NÉM GẠCH?                             ║\n");
+    printf("║   📌  TUI LÀM CHƠI CHỨ BỘ CÓ LÀM TIỀN ĐÂU                  ║\n");
+    printf("║   😤  ĐỪNG SO SÁNH VỚI CHATGPT - TUI KHÁC MÀ               ║\n");
+    printf("║   🚀  NGHỊCH CHO VUI THÔI - AE ĐỪNG NÓNG                   ║\n");
+    printf("║   🙏  XIN ĐỪNG NÉM GẠCH - TUI CHỈ LÀ CODE C               ║\n");
+    printf("║                                                              ║\n");
+    printf("╠══════════════════════════════════════════════════════════════╣\n");
+    printf("║   📖 Gõ /help để xem lệnh | 🧠 AI thuần C - Cơ bản nhất   ║\n");
     printf("╚══════════════════════════════════════════════════════════════╝\n");
+    printf("\n");
+    printf("  ╔═══════════════════════════════════════════════════════╗\n");
+    printf("  ║  💬 \"Tôi không cần GPU, tôi cần một câu hỏi hay!\"   ║\n");
+    printf("  ║  🙏  LÀM CHƠI THÔI - ĐỪNG NÉM GẠCH NGHE              ║\n");
+    printf("  ║  🧠  NẾU CÓ GÌ SAI, THÌ... TẠI TÔI NGU!              ║\n");
+    printf("  ╚═══════════════════════════════════════════════════════╝\n");
     printf("\n");
 }
 
@@ -21,16 +58,7 @@ void print_help() {
     printf("║  /help      Hiển thị trợ giúp            ║\n");
     printf("║  /stats     Xem thống kê bá đạo         ║\n");
     printf("║  /context   Xem ngữ cảnh hội thoại      ║\n");
-    printf("║  /intent    Bật/tắt phân tích ý định    ║\n");
-    printf("║  /attribute Bật/tắt nhận thuộc tính     ║\n");
-    printf("║  /physics   Bật/tắt nhà vật lý         ║\n");
-    printf("║  /chemistry Bật/tắt hóa học            ║\n");
-    printf("║  /coder     Bật/tắt viết code          ║\n");
-    printf("║  /knowledge Bật/tắt kiến thức C        ║\n");
-    printf("║  /vietnamese Bật/tắt tiếng Việt        ║\n");
-    printf("║  /bridge    Bật/tắt suy nghĩ tổng hợp  ║\n");
     printf("║  /clear     Xóa màn hình                ║\n");
-    printf("║  /reset     Xóa ngữ cảnh                ║\n");
     printf("║  /exit      Thoát (tiếc nuối)          ║\n");
     printf("╚══════════════════════════════════════════╝\n");
     printf("\n");
@@ -40,10 +68,10 @@ int main() {
     print_banner();
     Brain brain;
     brain_init(&brain, "CAI");
-    printf("📚 Đang huấn luyện... (Bridge đang kết nối các kiến thức)\n");
+    printf("📚 Đang huấn luyện... (Cố gắng đừng ném gạch nghe!)\n");
     brain_train(&brain, "data/knowledge.txt");
     printf("✅ Sẵn sàng! Gõ /help để xem lệnh.\n");
-    printf("   (Tôi sẽ suy nghĩ tổng hợp trước khi trả lời!)\n\n");
+    printf("   (Tôi biết tôi không thông minh như ChatGPT, nhưng tôi chạy nhanh!)\n\n");
     char input[1000];
     char context_buf[2000];
     while (1) {
@@ -77,48 +105,8 @@ int main() {
             printf("✅ Đã xóa ngữ cảnh!\n");
             continue;
         }
-        else if (strcmp(input, "/intent") == 0) {
-            brain.enable_intent = !brain.enable_intent;
-            printf("✅ Intent: %s\n", brain.enable_intent ? "BẬT" : "TẮT");
-            continue;
-        }
-        else if (strcmp(input, "/attribute") == 0) {
-            brain.enable_attribute = !brain.enable_attribute;
-            printf("✅ Attribute: %s\n", brain.enable_attribute ? "BẬT" : "TẮT");
-            continue;
-        }
-        else if (strcmp(input, "/physics") == 0) {
-            brain.enable_physics = !brain.enable_physics;
-            printf("✅ Physics: %s\n", brain.enable_physics ? "BẬT 🔬" : "TẮT");
-            continue;
-        }
-        else if (strcmp(input, "/chemistry") == 0) {
-            brain.enable_chemistry = !brain.enable_chemistry;
-            printf("✅ Chemistry: %s\n", brain.enable_chemistry ? "BẬT 🧪" : "TẮT");
-            continue;
-        }
-        else if (strcmp(input, "/coder") == 0) {
-            brain.enable_coder = !brain.enable_coder;
-            printf("✅ Coder: %s\n", brain.enable_coder ? "BẬT 💻" : "TẮT");
-            continue;
-        }
-        else if (strcmp(input, "/knowledge") == 0) {
-            brain.enable_knowledge = !brain.enable_knowledge;
-            printf("✅ Knowledge: %s\n", brain.enable_knowledge ? "BẬT 📚" : "TẮT");
-            continue;
-        }
-        else if (strcmp(input, "/vietnamese") == 0) {
-            brain.enable_vietnamese = !brain.enable_vietnamese;
-            printf("✅ Vietnamese: %s\n", brain.enable_vietnamese ? "BẬT 🇻🇳" : "TẮT");
-            continue;
-        }
-        else if (strcmp(input, "/bridge") == 0) {
-            brain.enable_bridge = !brain.enable_bridge;
-            printf("✅ Bridge: %s\n", brain.enable_bridge ? "BẬT 🧠" : "TẮT");
-            continue;
-        }
         if (strlen(input) == 0) {
-            printf("🤖 CAI: Hỏi gì đi bạn!\n\n");
+            printf("🤖 CAI: Hỏi gì đi! Đừng có im lặng rồi ném gạch nghe!\n\n");
             continue;
         }
         brain_learn(&brain, input);
