@@ -1,9 +1,10 @@
 #ifndef TEXT_PROCESSOR_H
 #define TEXT_PROCESSOR_H
 
+#include "markov.h"  // Lấy MAX_WORD_LEN từ markov.h
+
 #define MAX_SENTENCES 50
 #define MAX_WORDS_PER_SENTENCE 100
-#define MAX_WORD_LEN 64
 
 // Cấu trúc 1 câu
 typedef struct {
