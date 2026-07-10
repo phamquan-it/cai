@@ -2,10 +2,9 @@ CC = gcc
 CFLAGS = -Wall -Wextra -O2 -I./src
 LDFLAGS = -lm
 TARGET = bin/cai
+
 SRCS = src/main.c src/brain.c src/markov.c src/utils.c src/context.c \
-       src/context_tracker.c src/reasoning.c src/text_processor.c \
-       src/context_filter.c src/attribute_constraint.c src/thought_processor.c \
-       src/sentence_templates.c src/knowledge_learner.c
+       src/debug_logger.c src/config.c src/reasoning_nl.c src/rule_learner.c
 OBJS = $(SRCS:src/%.c=build/%.o)
 
 all: $(TARGET)

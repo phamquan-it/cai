@@ -1,0 +1,21 @@
+# Learned Rules (auto-generated)
+# Format: cause|effect|relation
+
+dạy tôi: học ai|học toánn|cần
+học ai|học toán|cần
+strcpy(summary, "📭 chưa học rule nào!\n💡 hãy nói: 'a|b' hoặc 'a dẫn đến b'");|cần
+"   - 'a|b' (ví dụ: học tập dẫn đến thành công)\n"|dẫn đến
+if (strstr(lower, "|") != null) return 1;|cần
+if (strstr(lower, "|") != null && strlen(strstr(lower, "cần ")) > 3) return 1;|cần
+") != null && strstr(lower, "|") != null) return 1;|dẫn đến
+//  pattern: "a|b"|cần
+else if (strstr(lower, "|") != null) {|dẫn đến
+char *pos = strstr(lower, "|");|dẫn đến
+pos += strlen("|");|dẫn đến
+strcpy(relation, "|");|dẫn đến
+a|b"|dẫn đến
+") != null && strstr(lower, "|") != null) {|dẫn đến
+"   - 'a|b' (ví dụ: xây nhà cần xi măng)\n"|cần
+"   - 'a|b' (ví dụ: trời mưa gây ra đường ướt)\n"|gây ra
+a|b' (ví dụ: nếu trời mưa thì đường ướt)");|dẫn đến
+c ai|học toán|cần

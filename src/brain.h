@@ -9,6 +9,8 @@ typedef struct {
     char name[50];
     int conversation_count;
     ConversationContext context;
+    
+    // Các enable flag
     int enable_intent;
     int enable_attribute;
     int enable_physics;
@@ -17,7 +19,9 @@ typedef struct {
     int enable_chemistry;
     int enable_vietnamese;
     int enable_bridge;
-    int enable_reasoning;  // THÊM DÒNG NÀY
+    int enable_reasoning;
+    int enable_markov;
+    int enable_context;
 } Brain;
 
 void brain_init(Brain *b, const char *name);
@@ -28,6 +32,7 @@ char* brain_chat(Brain *b, const char *input);
 void brain_stats(Brain *b);
 void brain_get_context(Brain *b, char *buffer, int size);
 
+// Các hàm set
 void brain_set_intent(Brain *b, int enable);
 void brain_set_attribute(Brain *b, int enable);
 void brain_set_physics(Brain *b, int enable);
@@ -36,6 +41,8 @@ void brain_set_knowledge(Brain *b, int enable);
 void brain_set_chemistry(Brain *b, int enable);
 void brain_set_vietnamese(Brain *b, int enable);
 void brain_set_bridge(Brain *b, int enable);
-void brain_set_reasoning(Brain *b, int enable);  // THÊM DÒNG NÀY
+void brain_set_reasoning(Brain *b, int enable);
+void brain_set_markov(Brain *b, int enable);
+void brain_set_context(Brain *b, int enable);
 
 #endif
